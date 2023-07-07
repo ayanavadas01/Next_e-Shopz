@@ -126,7 +126,7 @@ export default function Layout({ title, description, children }) {
   return (
     <div>
       <Head>
-        <title>{title ? `${title} - e-Shopz` : 'e-Shopz'}</title>
+        <title>{title ? `${title} - Next_e-Shopz` : 'Next_e-Shopz'}</title>
         {description && <meta name="description" content={description}></meta>}
       </Head>
       <ThemeProvider theme={theme}>
@@ -279,7 +279,18 @@ export default function Layout({ title, description, children }) {
         </AppBar>
         <Container className={classes.main}>{children}</Container>
         <footer className={classes.footer}>
-          <Typography>All rights reserved. Next_e-Shopz.<p>&nbsp;<a id="reach us" href="https://next-e-shopz-reach-us.netlify.app/"><h3>Reach Us</h3></a></p></Typography>
+          <Typography>
+            All rights reserved. Next_e-Shopz.
+            <p>
+              &nbsp;
+              <a
+                id="reach us"
+                href="https://next-e-shopz-reach-us.netlify.app/"
+              >
+                <h3>Reach Us</h3>
+              </a>
+            </p>
+          </Typography>
         </footer>
       </ThemeProvider>
     </div>
